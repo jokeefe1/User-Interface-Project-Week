@@ -1,9 +1,11 @@
 import React from 'react'
+import TopCard from '../TopCard/TopCard'
 
 export default function TopSection() {
+
   return (
     <div>
-      TopSection
+      <TopCard />
     </div>
   )
 }
