@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container } from '../../Global.styles';
-import Button from '../Button/Button';
 import { StyledSection } from './BottomCard.styles';
 
 export default function BottomCard(props) {
     return (
         <StyledSection>
-            <img src={props.img} alt="blueprint" />
+            <img src={props.img} alt="architectual" />
             <Container>
                 <div>
                     <h2>{props.title}</h2>

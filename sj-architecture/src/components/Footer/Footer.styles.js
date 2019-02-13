@@ -11,7 +11,16 @@ export const StyledFooter = styled.div`
         font-weight: 900;
     }
 
-    span {
-        padding-top: 2rem;
+    input {
+        width: 100%;
+        height: 4rem;
+        border-radius: 0.5rem;
+        border: none;
+        padding: 1rem;
+        outline: none;
+    }
+
+    div:last-child {
+        padding: 2rem 0 0.5rem;
     }
 `;
