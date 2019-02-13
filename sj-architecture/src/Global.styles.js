@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -50,7 +50,6 @@ table {
 }
 
 /* Custom Styles */
-
 html {
    box-sizing: border-box;
    font-size: 62.5%;
@@ -75,6 +74,30 @@ img {
 }
 `;
 
+// Global Container
+export const Container = styled.div`
+    width: 95%;
+    margin: auto;
+`;
+
+// Media Queries
+const sizes = {
+    desktop: 2000,
+    tabletLarge: 998,
+    tablet: 700,
+    phone: 500
+};
+export const media = Object.keys(sizes).reduce((acc, label) => {
+    acc[label] = (...args) => css`
+        @media (max-width: ${sizes[label]}px) {
+            ${css(...args)};
+        }
+    `;
+    return acc;
+}, {});
+
+
+// Theme Object
 export const theme = {
            white: '#fff',
            lightGrey: '#D8D8D8',
@@ -83,6 +106,7 @@ export const theme = {
            black: '#222',
            geryBlue: '#5E9FB9',
            fontFamily: 'Roboto, sans-serif',
+           ...media
        };
 
 // ### GENERAL STYLES
@@ -144,7 +168,4 @@ export const theme = {
 //         - Color: #FFFFFF
 //           - Hover Color: #222222
 
-export const Container = styled.div`
-    width: 95%;
-    margin: auto;
-`;
+
