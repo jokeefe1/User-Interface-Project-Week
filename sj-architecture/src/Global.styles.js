@@ -59,6 +59,9 @@ html {
 body {
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     font-family: 'Roboto', sans-serif;
+    font-weight: regular;
+    font-size: 1rem;
+    line-height: 2;
 }
 
 img {
