@@ -42,7 +42,9 @@ export default function BottomSection() {
                 </Container>
             </StyledSection>
             <StyledSection>
-                <StyledImg2 />
+                <Container>
+                    <StyledImg2 />
+                </Container>
                 <Container>
                     <div>
                         <h2>OUTSKIRTS</h2>
@@ -67,7 +69,9 @@ export default function BottomSection() {
                 </Container>
             </StyledSection>
             <StyledSection>
-                <StyledImg3 />
+                <Container>
+                    <StyledImg3 />
+                </Container>
                 <Container>
                     <div>
                         <h2>THE BLOCKS</h2>

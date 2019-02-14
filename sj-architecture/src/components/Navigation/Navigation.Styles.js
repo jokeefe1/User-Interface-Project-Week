@@ -1,25 +1,57 @@
 import styled from 'styled-components';
 import { Container } from '../../Global.styles';
+import { Link } from 'react-router-dom';
 
 export const Nav = styled.div`
-           height: 5rem;
-           padding: 1rem;
-           background-color: ${({ theme }) => theme.mediumGrey};
-           color: ${({ theme }) => theme.white};
-           ${Container} {
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-           }
+    position: sticky;
+    top: 0;
+    height: 5rem;
+    z-index: 99;
+    background-color: ${({ theme }) => theme.mediumGrey};
+    color: ${({ theme }) => theme.white};
+    ${Container} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-           div {
-               font-size: 3rem;
-           }
+    div {
+        font-size: 2.5rem;
+    }
+    
+     div > div {
+        padding: 1rem 0;
+        cursor: pointer;
+    }
 
-           ${({ theme }) => theme.tablet`
+    ${({ theme }) => theme.tablet`
      ${Container} {
             max-width: 900px;
             margin: auto;
         }
     `}
-       `;
+`;
+
+
+export const StyledMenu = styled.div`
+    display: none;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: ${({theme}) => theme.lightGrey};
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
+export const StyledLink = styled(Link)`
+    padding: 3rem;
+    color: ${({theme}) => theme.white};
+    text-decoration: none;
+    ${StyledLink}:hover {
+        color: ${({theme}) => theme.black};
+    }
+`

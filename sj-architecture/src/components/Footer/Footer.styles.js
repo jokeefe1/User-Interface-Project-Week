@@ -21,6 +21,10 @@ export const StyledFooter = styled.div`
         outline: none;
     }
 
+    p {
+        font-size: 1.5rem;
+    }
+
     ${Container} > div:last-child {
         margin: 3rem 0 0;
     }
