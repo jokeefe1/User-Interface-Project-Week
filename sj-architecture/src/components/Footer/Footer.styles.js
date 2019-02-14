@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Container } from '../../Global.styles';
 
 export const StyledFooter = styled.div`
     background-color: ${({ theme }) => theme.darkGrey};
@@ -20,7 +21,18 @@ export const StyledFooter = styled.div`
         outline: none;
     }
 
-    div:last-child {
-        padding: 2rem 0 0.5rem;
+    ${Container} > div:last-child {
+        margin: 3rem 0 0;
+    }
+
+    ${Container} > div {
+        ${({ theme }) => theme.tablet`
+        display: flex;
+        justify-content: space-around;
+
+        span {
+            text-align: center;
+        }
+    `}
     }
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import { Container } from '../../Global.styles';
 import MobileImg1 from '../../img/home/home-mobile-img-1.png';
 import MobileImg2 from '../../img/home/home-mobile-img-2.png';
+import DesktopImg1 from '../../img/home/home-img-1.png';
+import DesktopImg2 from '../../img/home/home-img-2.png';
 import Button from '../Button/Button';
 import { StyledSection, Img1 } from './TopSection.styles';
 
@@ -47,7 +49,7 @@ export default function TopSection() {
                 </section>
                 <section>
                     <div>
-                        <img src={MobileImg2} alt="architecture" />
+                        <img src={DesktopImg2} alt="architecture" />
                     </div>
                     <div>
                         <h2>Futuristic Designs</h2>

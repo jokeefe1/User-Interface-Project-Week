@@ -11,7 +11,8 @@ export const StyledSection = styled.div`
 
     section {
         div > img {
-            padding-bottom: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         div {
@@ -61,6 +62,6 @@ export const StyledSection = styled.div`
 `;
 
 export const Img1 = styled.img.attrs({
-    src: `${MobileImg1}`
+    src: `${DesktopImg1}`
 })``
 
