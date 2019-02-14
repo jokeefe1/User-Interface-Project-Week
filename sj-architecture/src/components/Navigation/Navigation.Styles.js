@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Nav = styled.div`
     position: sticky;
     top: 0;
-    height: 5rem;
+    height: 7rem;
     z-index: 99;
     background-color: ${({ theme }) => theme.mediumGrey};
     color: ${({ theme }) => theme.white};

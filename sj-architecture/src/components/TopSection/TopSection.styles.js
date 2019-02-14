@@ -15,6 +15,7 @@ export const StyledSection = styled.div`
             padding-bottom: 2rem;
         }
 
+        
         div {
             h2 {
                 font-weight: bold;
@@ -24,10 +25,12 @@ export const StyledSection = styled.div`
             }
             p {
                 font-size: 1.5rem;
-                padding-bottom: 1rem;
+                padding-bottom: 3rem;
                 line-height: 1.4;
             }
         }
+        
+
     }
 
     ${({ theme }) => theme.tablet`

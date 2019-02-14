@@ -60,10 +60,11 @@ export const StyledSection = styled.div`
         `}
     }
     h2 {
-        font-weight: bold;
+        font-weight: regular;
         font-size: 2.2rem;
         color: #222222;
         padding-bottom: 1rem;
+        letter-spacing: 5px;
     }
 
     section {

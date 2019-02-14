@@ -4,11 +4,15 @@ import { Container } from '../../Global.styles';
 export const StyledFooter = styled.div`
     background-color: ${({ theme }) => theme.darkGrey};
     color: ${({ theme }) => theme.white};
-    padding: 2rem;
+    padding-top: 3rem;
     line-height: 2;
 
+    div {
+        padding-bottom: 3rem;
+    }
+
     h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 900;
     }
 
@@ -22,11 +26,11 @@ export const StyledFooter = styled.div`
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     ${Container} > div:last-child {
-        margin: 3rem 0 0;
+        padding-bottom: 0;
     }
 
     ${Container} > div {
