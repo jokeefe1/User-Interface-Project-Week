@@ -1,4 +1,5 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+import media from './media'
 
 export const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -81,33 +82,34 @@ export const Container = styled.div`
 `;
 
 // Media Queries
-const sizes = {
-    desktop: 2000,
-    tabletLarge: 998,
-    tablet: 700,
-    phone: 500
-};
-export const media = Object.keys(sizes).reduce((acc, label) => {
-    acc[label] = (...args) => css`
-        @media (max-width: ${sizes[label]}px) {
-            ${css(...args)};
-        }
-    `;
-    return acc;
-}, {});
+// const sizes = {
+//     desktop: 2000,
+//     tabletLarge: 998,
+//     tablet: 700,
+//     phone: 500
+// };
 
+// export const media = Object.keys(sizes).reduce((acc, label) => {
+//     acc[label] = (...args) => css`
+//         @media (max-width: ${sizes[label]}px) {
+//             ${css(...args)};
+//         }
+//     `;
+//     return acc;
+// }, {});
 
 // Theme Object
 export const theme = {
-           white: '#fff',
-           lightGrey: '#D8D8D8',
-           mediumGrey: '#98a3ae',
-           darkGrey: '#828282',
-           black: '#222',
-           geryBlue: '#5E9FB9',
-           fontFamily: 'Roboto, sans-serif',
-           ...media
-       };
+    white: '#fff',
+    lightGrey: '#D8D8D8',
+    mediumGrey: '#98a3ae',
+    darkGrey: '#828282',
+    black: '#222',
+    geryBlue: '#5E9FB9',
+    fontFamily: 'Roboto, sans-serif',
+    ...media
+};
+
 
 // ### GENERAL STYLES
 //   - Background: #FFFFFF
@@ -167,5 +169,3 @@ export const theme = {
 //       - Line Height: 85px
 //         - Color: #FFFFFF
 //           - Hover Color: #222222
-
-

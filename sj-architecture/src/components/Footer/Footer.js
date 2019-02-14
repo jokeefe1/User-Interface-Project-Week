@@ -15,14 +15,14 @@ export default function Footer() {
                     <p>123 Lane</p>
                     <p>Suite</p>
                     <p>Albany, NY 12345</p>
-                    <phone>202 555 0144</phone>
+                    <p>202 555 0144</p>
                 </div>
                 <div>
                     <h2>Florida</h2>
                     <p>Ocean Drive</p>
                     <p>Suite 201</p>
                     <p>Orlando, FL 22345</p>
-                    <phone>502 555 0144</phone>
+                    <p>502 555 0144</p>
                 </div>
                 <div>
                     <h2>California</h2>
@@ -31,7 +31,7 @@ export default function Footer() {
                         <p>Suite 105 </p>
                         <p>San Diego, CA 22345</p>
                     </address>
-                    <phone>702 555 0144</phone>
+                    <p>702 555 0144</p>
                 </div>
                 <div>Copyright © 2018 Smith and Jones</div>
             </Container>

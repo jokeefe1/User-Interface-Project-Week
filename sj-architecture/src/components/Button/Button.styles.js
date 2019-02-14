@@ -10,4 +10,8 @@ export const StyledButton = styled.button`
     outline: none;
     cursor: pointer;
     color: ${({ theme }) => theme.black};
+
+    ${({theme}) => theme.tablet`
+        max-width: 15rem;
+    `}
 `;

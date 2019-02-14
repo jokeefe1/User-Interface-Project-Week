@@ -7,10 +7,16 @@ export default function TopCard(props) {
     return (
         <Container>
             <StyledSection>
-                <img src={props.img} alt="blueprint" />
-                <h2>{props.title}</h2>
-                <p>{props.desc}</p>
-                <Button btnText={props.btnText} />
+                <section>
+                    <div>
+                        <img src={props.imgLg} alt="architecture" />
+                    </div>
+                    <div>
+                        <h2>{props.title}</h2>
+                        <p>{props.desc}</p>
+                        <Button btnText={props.btnText} />
+                    </div>
+                </section>
             </StyledSection>
         </Container>
     );
