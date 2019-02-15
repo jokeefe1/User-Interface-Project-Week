@@ -5,7 +5,7 @@ import { StyledDiv } from './Header.styles';
 export default function Header(props) {
     console.log(props);
     return (
-        <StyledDiv img1={props.img1} img2={props.img2}>
+        <StyledDiv img1={props.img1} img2={props.img2} primary={props.primary}>
             <Container>
                 <div>
                     <h2>Integrity,</h2>

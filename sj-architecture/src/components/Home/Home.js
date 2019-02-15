@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Navigation />
-      <Header img1={img1} img2={img2}/>
+      <Header img1={img1} img2={img2} primary/>
       <TopSection />
       <BottomSection />
       <Footer />

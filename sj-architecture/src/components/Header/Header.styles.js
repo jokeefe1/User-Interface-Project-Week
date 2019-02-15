@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { Container } from '../../Global.styles';
-import HeaderImg2 from '../../img/home/home-jumbotron.png';
-import HeaderImg1 from '../../img/home/home-mobile-jumbotron.png';
 
 export const StyledDiv = styled.div`
     background-image: url(${props => props.img1});
@@ -13,6 +11,7 @@ export const StyledDiv = styled.div`
     padding: 8rem 0 3rem;
 
     div > h2 {
+        visibility: ${props => (props.primary ? 'block' : 'hidden')};
         font-weight: 900;
         font-size: 3rem;
         line-height: 1.2;
