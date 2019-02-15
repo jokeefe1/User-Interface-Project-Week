@@ -26,7 +26,7 @@ export default function Navigation() {
             <StyledMenu style={isOpen ? {display: 'block'} : {display: 'none'}}>
                 <div>
                     <StyledLink to='/'>Home</StyledLink>
-                    <StyledLink to='/service'>Services</StyledLink>
+                    <StyledLink to='/services'>Services</StyledLink>
                     <StyledLink to='/contact'>Contact</StyledLink>
                 </div>
             </StyledMenu>

@@ -2,9 +2,10 @@ import React from 'react';
 import { Container } from '../../Global.styles';
 import { StyledDiv } from './Header.styles';
 
-export default function Header() {
+export default function Header(props) {
+    console.log(props);
     return (
-        <StyledDiv>
+        <StyledDiv img1={props.img1} img2={props.img2}>
             <Container>
                 <div>
                     <h2>Integrity,</h2>
