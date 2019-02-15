@@ -10,7 +10,6 @@ export default function Navigation() {
 
     const toggleMenu = () => {
         setOpen(prevIsOpen => !prevIsOpen);
-        console.log(isOpen);
     };
     return (
         <Nav>
