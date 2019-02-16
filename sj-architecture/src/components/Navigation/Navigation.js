@@ -11,10 +11,17 @@ export default function Navigation() {
     const toggleMenu = () => {
         setOpen(prevIsOpen => !prevIsOpen);
     };
+
+    const toggleHome = () => {
+        setOpen(false)
+    }
+
     return (
         <Nav>
             <Container>
-                <div>S&J</div>
+                <div>
+                    <StyledLink to='/' onClick={toggleHome}>S&J</StyledLink>
+                </div>
                 <div>
                     {isOpen ? (
                         <IoIosClose size={25} onClick={toggleMenu} />
@@ -23,11 +30,19 @@ export default function Navigation() {
                     )}
                 </div>
             </Container>
-            <StyledMenu style={isOpen ? {display: 'block'} : {display: 'none'}}>
+            <StyledMenu
+                style={isOpen ? { display: 'block' } : { display: 'none' }}
+            >
                 <div>
-                    <StyledLink to='/'>Home</StyledLink>
-                    <StyledLink to='/services'>Services</StyledLink>
-                    <StyledLink to='/contact'>Contact</StyledLink>
+                    <StyledLink to="/" onClick={toggleMenu}>
+                        Home
+                    </StyledLink>
+                    <StyledLink to="/services" onClick={toggleMenu}>
+                        Services
+                    </StyledLink>
+                    <StyledLink to="/contact" onClick={toggleMenu}>
+                        Contact
+                    </StyledLink>
                 </div>
             </StyledMenu>
         </Nav>
