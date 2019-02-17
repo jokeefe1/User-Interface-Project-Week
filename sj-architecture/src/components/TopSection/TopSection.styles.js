@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '../../Global.styles';
-import MobileImg1 from '../../img/home/home-mobile-img-1.png';
-import MobileImg2 from '../../img/home/home-mobile-img-2.png';
+// import MobileImg1 from '../../img/home/home-mobile-img-1.png';
+// import MobileImg2 from '../../img/home/home-mobile-img-2.png';
 import DesktopImg1 from '../../img/home/home-img-1.png';
 
 

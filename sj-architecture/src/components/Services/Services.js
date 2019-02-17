@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../../Global.styles';
 import img2 from '../../img/services/services-jumbotron.png';
 import img1 from '../../img/services/services-mobile-jumbotron.png';
@@ -18,11 +18,20 @@ import TabCard from '../TabCard/TabCard';
 import { StyledDiv } from './Services.styles';
 
 export default function Services() {
+
+    const [isActive, setActive] = useState(false)
+
+    const toggleTab = (e) => {
+        e.persist()
+        console.log(e)
+    };
+
     const tabData = [
         {
             id: 1,
             title: 'Pre-Construction',
-            desc:  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugiat voluptatem modi voluptatibus laudantium, rem dolores, debitis corporis maiores et earum quas nostrum provident autem fuga deserunt rerum itaque maxime neque? Eveniet aliquid accusantium dolorem, laudantium natus adipisci placeat eius praesentium doloribus ipsam alias minus sunt accusamus deleniti iure dolorum nobis. Officiis qui, quasi placeat quos nulla facere blanditiis maxime repellat soluta quidem eaque error similique et consectetur unde nihil repudiandae magni ipsa sint laudantium reiciendis ab id voluptatem? Exercitationem.",
+            desc:
+                'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugiat voluptatem modi voluptatibus laudantium, rem dolores, debitis corporis maiores et earum quas nostrum provident autem fuga deserunt rerum itaque maxime neque? Eveniet aliquid accusantium dolorem, laudantium natus adipisci placeat eius praesentium doloribus ipsam alias minus sunt accusamus deleniti iure dolorum nobis. Officiis qui, quasi placeat quos nulla facere blanditiis maxime repellat soluta quidem eaque error similique et consectetur unde nihil repudiandae magni ipsa sint laudantium reiciendis ab id voluptatem? Exercitationem.',
             img1: imgPreConst1,
             img2: imgPreConst2
         },
@@ -61,9 +70,12 @@ export default function Services() {
                 desc={desc}
                 img1={img1}
                 img2={img2}
+                isActive={isActive}
             />
         );
     });
+
+   
 
     return (
         <div>
@@ -74,19 +86,32 @@ export default function Services() {
                     <section>
                         <div>
                             <p>
-                                Services include: completely synergize resource
-                                taxing relationships via premier niche markets.
-                                Professionally cultivate one-to-one customer
-                                service with robust ideas. Dynamically innovate
-                                resource-leveling customer service for state of
-                                the art customer service.
+                                Services include: completely synergize
+                                resource taxing relationships via premier
+                                niche markets. Professionally cultivate
+                                one-to-one customer service with robust
+                                ideas. Dynamically innovate
+                                resource-leveling customer service for state
+                                of the art customer service.
                             </p>
                         </div>
                         <div>
-                            <Button btnText="Pre-Construction" />
-                            <Button btnText="Construction" />
-                            <Button btnText="Design Build" />
-                            <Button btnText="Sustainability" />
+                            <Button
+                                btnText="Pre-Construction"
+                                onClick={toggleTab}
+                            />
+                            <Button
+                                btnText="Construction"
+                                onClick={toggleTab}
+                            />
+                            <Button
+                                btnText="Design Build"
+                                onClick={toggleTab}
+                            />
+                            <Button
+                                btnText="Sustainability"
+                                onClick={toggleTab}
+                            />
                         </div>
                     </section>
                     <section>{tabCard}</section>
