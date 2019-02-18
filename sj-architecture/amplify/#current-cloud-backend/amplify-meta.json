@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "sjarchitecture-20190218131214-authRole",
+			"UnauthRoleArn": "arn:aws:iam::373264732885:role/sjarchitecture-20190218131214-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::373264732885:role/sjarchitecture-20190218131214-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "sjarchitecture-20190218131214-deployment",
+			"UnauthRoleName": "sjarchitecture-20190218131214-unauthRole",
+			"StackName": "sjarchitecture-20190218131214",
+			"StackId": "arn:aws:cloudformation:us-east-1:373264732885:stack/sjarchitecture-20190218131214/b80ddf70-33a8-11e9-a209-1235152b041e"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/sjarchitecture-20190218131214-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-02-18T18:15:41.383Z",
+			"output": {
+				"S3BucketSecureURL": "https://sjarchitecture-20190218131319-hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://sjarchitecture-20190218131319-hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "sjarchitecture-20190218131319-hostingbucket"
+			},
+			"lastPushDirHash": "Q1qZVerm4O5WwQUXQi9h/yIwwTQ="
+		}
+	}
+}
