@@ -11,7 +11,7 @@ export const BackgroundDiv = styled.div`
            height: 100vh;
        `;
 
-export const StyledForm = styled.div`
+export const StyledDiv = styled.div`
            display: flex;
            flex-direction: column;
            background-color: ${({ theme }) => theme.white};
