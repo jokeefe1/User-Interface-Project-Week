@@ -13,12 +13,12 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.black};
 
     &:hover {
-        background-color: ${({theme}) => theme.lightGrey};
-        color: ${({theme}) => theme.white};
-        border: 1px solid ${({theme}) => theme.lightGrey};
+        background-color: ${({ theme }) => theme.greyBlue};
+        color: ${({ theme }) => theme.white};
+        border: 1px solid ${({ theme }) => theme.greyBlue};
     }
 
-    ${({theme}) => theme.tablet`
+    ${({ theme }) => theme.tablet`
         max-width: 15rem;
     `}
 `;
