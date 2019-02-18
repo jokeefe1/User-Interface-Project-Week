@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../../Global.styles';
 import img2 from '../../img/services/services-jumbotron.png';
 import img1 from '../../img/services/services-mobile-jumbotron.png';
@@ -66,6 +66,17 @@ export default function Services() {
         );
     });
 
+    const [active, setActive] = useState(0);
+
+    const toggleCard = e => {
+        e.persist();
+        const { textContent } = e.target;
+        textContent === 'Pre-Construction' && setActive(0);
+        textContent === 'Construction' && setActive(1);
+        textContent === 'Design Build' && setActive(2);
+        textContent === 'Sustainability' && setActive(3);
+    };
+
     return (
         <div>
             <Navigation />
@@ -84,13 +95,25 @@ export default function Services() {
                             </p>
                         </div>
                         <div>
-                            <Button btnText="Pre-Construction" />
-                            <Button btnText="Construction" />
-                            <Button btnText="Design Build" />
-                            <Button btnText="Sustainability" />
+                            <Button
+                                btnText="Pre-Construction"
+                                onClick={toggleCard}
+                            />
+                            <Button
+                                btnText="Construction"
+                                onClick={toggleCard}
+                            />
+                            <Button
+                                btnText="Design Build"
+                                onClick={toggleCard}
+                            />
+                            <Button
+                                btnText="Sustainability"
+                                onClick={toggleCard}
+                            />
                         </div>
                     </section>
-                    <section>{tabCard}</section>
+                    <section>{tabCard[`${active}`] || tabCard[0]}</section>
                 </Container>
             </StyledDiv>
             <Footer />
