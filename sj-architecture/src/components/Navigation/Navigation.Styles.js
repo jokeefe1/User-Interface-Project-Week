@@ -14,7 +14,7 @@ export const StyledLink = styled(Link)`
 export const Nav = styled.div`
     position: sticky;
     top: 0;
-    height: 7rem;
+    height: 5rem;
     z-index: 99;
     background-color: ${({ theme }) => theme.mediumGrey};
     color: ${({ theme }) => theme.white};
@@ -29,8 +29,11 @@ export const Nav = styled.div`
     }
 
     div > div {
-        padding: 1rem 0;
+        padding: 0;
         cursor: pointer;
+        & > a {
+            padding: 0;
+        }
     }
 
     ${({ theme }) => theme.tablet`

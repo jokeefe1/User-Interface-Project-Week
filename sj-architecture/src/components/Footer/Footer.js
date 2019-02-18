@@ -15,7 +15,9 @@ export default function Footer() {
                             name="email"
                             placeholder="Enter email"
                         />
-                        <p>We'll never share your email with anyone else.</p>
+                        <p>
+                            We'll never share your email with anyone else.
+                        </p>
                     </div>
                     <div>
                         <h2>New York</h2>
@@ -39,7 +41,9 @@ export default function Footer() {
                         <p>702 555 0144</p>
                     </div>
                 </div>
-                <div>Copyright © 2018 Smith and Jones</div>
+                <div>
+                    <span>Copyright © 2018 Smith and Jones</span>
+                </div>
             </Container>
         </StyledFooter>
     );

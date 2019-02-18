@@ -36,11 +36,9 @@ export const StyledFooter = styled.div`
     ${Container} > div {
         ${({ theme }) => theme.tablet`
         display: flex;
-        justify-content: space-around;
-
-        span {
-            text-align: center;
-        }
+        justify-content: space-between;
+        max-width: 900px;
+        margin: auto;
     `}
     }
 `;
