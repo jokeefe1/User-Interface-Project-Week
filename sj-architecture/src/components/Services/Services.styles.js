@@ -10,7 +10,7 @@ export const StyledDiv = styled.div`
         padding-bottom: 2rem;
         ${StyledButton} {
             &:hover {
-                background-color: cadetblue;
+                background-color: ${({theme}) => theme.greyBlue};
             }
         }
     }

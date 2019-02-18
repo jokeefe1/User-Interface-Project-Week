@@ -104,7 +104,7 @@ export const theme = {
     mediumGrey: '#98a3ae',
     darkGrey: '#828282',
     black: '#222',
-    geryBlue: '#5E9FB9',
+    greyBlue: '#5E9FB9',
     fontFamily: 'Roboto, sans-serif',
     ...media
 };
