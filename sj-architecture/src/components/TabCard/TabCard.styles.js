@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-
 export const StyledSection = styled.div`
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
     div > h2 {
         font-weight: 900;
         font-size: 1.6rem;
     }
-    ${({theme}) => theme.tablet`
+   
+    ${({ theme }) => theme.tablet`
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0;
         div {
             width: 50%;
             padding-right: 2rem;
