@@ -7,7 +7,7 @@ export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.white};
     text-decoration: none;
     &:hover {
-        color: ${({ theme }) => theme.black};
+        color: ${({ theme }) => theme.greyBlue};
     }
 `;
 
@@ -31,6 +31,7 @@ export const Nav = styled.div`
     div > div {
         padding: 0;
         cursor: pointer;
+
         & > a {
             padding: 0;
         }
@@ -55,5 +56,8 @@ export const StyledMenu = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        ${StyledLink} {
+            padding: 3rem;
+        }
     }
 `;
