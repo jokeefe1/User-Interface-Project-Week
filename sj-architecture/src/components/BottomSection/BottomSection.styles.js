@@ -12,7 +12,7 @@ export const H2 = styled.h2`
 `;
 
 export const StyledImg1 = styled.div`
-    width: 100%;
+    /* width: 100%; */
     height: 20rem;
     background-image: url(${Img1});
     background-repeat: no-repeat;
@@ -80,5 +80,9 @@ export const StyledSection = styled.div`
             margin: auto;
         `}
         }
+    }
+    ${Container} {
+        max-width: 900px;
+        margin: auto;
     }
 `;

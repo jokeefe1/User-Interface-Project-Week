@@ -11,11 +11,9 @@ import {
 export default function BottomSection() {
     return (
         <div>
-            <Container>
-                <H2>Recent Projects</H2>
-            </Container>
             <StyledSection>
                 <Container>
+                    <H2>Recent Projects</H2>
                     <StyledImg1 />
                 </Container>
                 <Container>
