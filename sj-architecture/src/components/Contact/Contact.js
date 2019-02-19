@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container } from '../../Global.styles';
-import img1 from '../../img/home/home-img-2.png';
+import img1 from '../../img/home/home-mobile-img-2.png';
+import img2 from '../../img/home/home-img-2.png';
+
 import Navigation from '../Navigation/Navigation';
 import { BackgroundDiv, StyledDiv } from './Contact.styles';
 
@@ -35,7 +37,7 @@ export default function Contact() {
     return (
         <>
             <Navigation />
-            <BackgroundDiv img1={img1}>
+            <BackgroundDiv img1={img1} img2={img2}>
                 <Container>
                     <form onSubmit={handleSubmit}>
                         <StyledDiv>
