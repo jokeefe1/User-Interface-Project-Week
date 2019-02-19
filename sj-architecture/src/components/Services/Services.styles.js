@@ -16,7 +16,7 @@ export const StyledDiv = styled.div`
     }
     p {
         padding: 4rem 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     ${({ theme }) => theme.tablet`
            section:first-child > div:last-child {
@@ -28,6 +28,5 @@ export const StyledDiv = styled.div`
         }
     `}
 `;
-
 
 

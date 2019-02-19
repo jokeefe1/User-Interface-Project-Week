@@ -14,7 +14,7 @@ export const StyledLink = styled(Link)`
 export const Nav = styled.div`
     position: sticky;
     top: 0;
-    height: 5rem;
+    height: 8rem;
     z-index: 99;
     background-color: ${({ theme }) => theme.mediumGrey};
     color: ${({ theme }) => theme.white};
@@ -25,7 +25,7 @@ export const Nav = styled.div`
     }
 
     div {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     div > div {
@@ -46,21 +46,21 @@ export const Nav = styled.div`
 `;
 
 export const StyledMenu = styled.div`
-           display: none;
-           z-index: 100;
-           width: 100vw;
-           height: 100vh;
-           background-color: ${({ theme }) => theme.lightGrey};
-           div {
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               ${StyledLink} {
-                   padding: 3rem;
-                   &:hover {
-                       color: ${({ theme }) => theme.greyBlue};
-                   }
-               }
-           }
-       `;
+    display: none;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: ${({ theme }) => theme.lightGrey};
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ${StyledLink} {
+            padding: 3rem;
+            &:hover {
+                color: ${({ theme }) => theme.greyBlue};
+            }
+        }
+    }
+`;

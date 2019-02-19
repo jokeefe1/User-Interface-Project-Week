@@ -39,8 +39,6 @@ export const StyledImg3 = styled.div`
 `;
 
 export const StyledSection = styled.div`
-    position: relative;
-    margin: 2rem 0;
     padding-bottom: 1rem;
 
     ${Container}:first-child {
@@ -68,15 +66,15 @@ export const StyledSection = styled.div`
     }
 
     section {
-        padding: 3rem;
+        margin: 4rem;
         p {
-            font-size: 1.5rem;
+            font-size: 2rem;
             padding-bottom: 1rem;
             line-height: 1.4;
             margin: 1rem;
 
             ${({ theme }) => theme.tablet`
-            width: 50%;
+            width: 70%;
             margin: auto;
         `}
         }

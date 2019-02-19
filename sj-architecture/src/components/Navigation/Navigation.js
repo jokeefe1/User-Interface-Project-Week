@@ -24,9 +24,9 @@ export default function Navigation() {
                 </div>
                 <div>
                     {isOpen ? (
-                        <IoIosClose size={25} onClick={toggleMenu} />
+                        <IoIosClose size={35} onClick={toggleMenu} />
                     ) : (
-                        <FaBars size={25} onClick={toggleMenu} />
+                        <FaBars size={35} onClick={toggleMenu} />
                     )}
                 </div>
             </Container>

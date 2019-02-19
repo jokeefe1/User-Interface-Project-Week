@@ -23,6 +23,7 @@ export const StyledFooter = styled.div`
         border: none;
         padding: 1rem;
         outline: none;
+        margin: 1rem 0;
     }
 
     p {
@@ -31,6 +32,8 @@ export const StyledFooter = styled.div`
 
     ${Container} > div:last-child {
         padding-bottom: 0;
+        display: flex;
+        justify-content: center;
     }
 
     ${Container} > div {

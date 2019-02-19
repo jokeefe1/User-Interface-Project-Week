@@ -1,21 +1,12 @@
 import styled from 'styled-components';
 import { Container } from '../../Global.styles';
-// import MobileImg1 from '../../img/home/home-mobile-img-1.png';
-// import MobileImg2 from '../../img/home/home-mobile-img-2.png';
 import DesktopImg1 from '../../img/home/home-img-1.png';
 
-
 export const StyledSection = styled.div`
-    margin: 2rem 0;
-    padding-bottom: 1rem;
+    padding: 5rem;
 
     section {
-        div > img {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-
-        
+        padding: 3rem;
         div {
             h2 {
                 font-weight: bold;
@@ -24,13 +15,11 @@ export const StyledSection = styled.div`
                 padding-bottom: 1rem;
             }
             p {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 padding-bottom: 3rem;
                 line-height: 1.4;
             }
         }
-        
-
     }
 
     ${({ theme }) => theme.tablet`
@@ -66,5 +55,4 @@ export const StyledSection = styled.div`
 
 export const Img1 = styled.img.attrs({
     src: `${DesktopImg1}`
-})``
-
+})``;

@@ -22,7 +22,7 @@ export const StyledSection = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-    height: 200px;
+    min-height: 300px;
     width: 100%;
     background-image: url(${props => props.img1});
     background-repeat: no-repeat;
