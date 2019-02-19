@@ -7,8 +7,9 @@ export const StyledDiv = styled.div`
     background-size: cover;
     background-position: center;
     color: ${({ theme }) => theme.white};
-    font-size: 2.5rem;
-    padding: 8rem 0 3rem;
+    padding-top: 18rem;
+    padding-bottom: 1rem;
+    height: 40rem;
 
     div > h2 {
         visibility: ${props => (props.primary ? 'block' : 'hidden')};
@@ -22,6 +23,9 @@ export const StyledDiv = styled.div`
             max-width: 900px;
             margin: auto;
         }
-            background-image: url(${props => props.img2});
+        background-image: url(${props => props.img2});
+        div > h2 {
+            font-size: 5rem;
+        }
     `}
 `;
