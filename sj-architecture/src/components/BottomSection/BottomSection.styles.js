@@ -40,6 +40,11 @@ export const StyledImg3 = styled.div`
 
 export const StyledSection = styled.div`
     padding-bottom: 1rem;
+    ${({ theme }) => theme.tablet`
+        &:nth-child(even) > div:nth-child(2) > div {
+            margin-left: 65%;
+        }
+    `}
 
     ${Container}:first-child {
         width: 100%;
@@ -52,9 +57,10 @@ export const StyledSection = styled.div`
         text-align: center;
         padding: 2rem;
         background-color: ${({ theme }) => theme.lightGrey};
-
+        margin-top: -20px;
         ${({ theme }) => theme.tablet`
             max-width: 25rem;
+            margin-left: 10px;
         `}
     }
     h2 {
