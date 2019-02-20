@@ -51,6 +51,7 @@ export const StyledMenu = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: ${({ theme }) => theme.lightGrey};
+    opacity: 0.9;
     div {
         display: flex;
         flex-direction: column;
