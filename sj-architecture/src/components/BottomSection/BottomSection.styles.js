@@ -42,7 +42,7 @@ export const StyledSection = styled.div`
     padding-bottom: 1rem;
     ${({ theme }) => theme.tablet`
         &:nth-child(even) > div:nth-child(2) > div {
-            margin-left: 65%;
+            margin-left: 71%;
         }
     `}
 
